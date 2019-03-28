@@ -5,6 +5,9 @@ import { Provider } from "react-redux"
 
 import store from "./store/configStore"
 
+import "./styles/Movie.scss"
+import "./styles/Header.scss"
+
 import App from './components/App'
 
 const jsx = (

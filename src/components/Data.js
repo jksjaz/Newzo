@@ -4,21 +4,22 @@ import React from "react"
 const Data = (props) => {
     const { each } = props
     return (
-        <div className="col-3">
-            {
-                each.multimedia ? 
-                <img src={each.multimedia.src}
-                    width="210"
-                    height="140"
-                    alt={each.summary_short}
-                /> :
-                <img src="http://www.filmfodder.com/reviews/images/poster-not-available.jpg"
-                    alt="Poster Not Available"
-                    height="140"
-                />
-            }
-            <h6>{each.display_title}</h6>
-            <p>{each.headline}</p>
+        <div className="outterMovieContainer col mb-3 shadow-sm bg-white rounded">
+            <div className="movieContainer">
+                {
+                    each.multimedia ? 
+                    <img src={each.multimedia.src}
+                        alt={each.summary_short}
+                        className="poster"
+                    /> :
+                    <img src="http://www.filmfodder.com/reviews/images/poster-not-available.jpg"
+                        alt="Poster Not Available"
+                        className="poster"
+                    />
+                }
+                <p className="displayTitle">{each.display_title}</p>
+                <p className="description">{each.headline}</p>
+            </div>
         </div>
     )
 }

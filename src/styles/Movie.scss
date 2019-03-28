@@ -1,0 +1,29 @@
+$font-stack: Helvetica, Arial, sans-serif;
+$static-rem: 0.3rem;
+$static-width: 150px;
+
+.displayTitle {
+    font-family: $font-stack;
+    font-size: 1.3rem;
+    color: #484848;
+    width: $static-width;
+}
+
+.description {
+    font-family: $font-stack;
+    color: #767676;
+    width: $static-width;
+}
+
+.poster {
+    width: $static-width;
+}
+
+.outterMovieContainer {
+    margin: $static-rem;
+}
+
+.movieContainer {
+    text-align: center;
+    margin: $static-rem;
+}
